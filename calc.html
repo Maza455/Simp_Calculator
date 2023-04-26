@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+	
+</head>
+<body>
+	<h1>Simple Calculator</h1>
+
+	<input type="text" id="display" readonly><br><br>
+	<button onclick="pressNum('7')">7</button>
+	<button onclick="pressNum('8')">8</button>
+	<button onclick="pressNum('9')">9</button>
+	<button onclick="pressOp('+')">+</button><br>
+	<button onclick="pressNum('4')">4</button>
+	<button onclick="pressNum('5')">5</button>
+	<button onclick="pressNum('6')">6</button>
+	<button onclick="pressOp('-')">-</button><br>
+	<button onclick="pressNum('1')">1</button>
+	<button onclick="pressNum('2')">2</button>
+	<button onclick="pressNum('3')">3</button>
+	<button onclick="pressOp('*')">*</button><br>
+	<button onclick="pressNum('0')">0</button>
+	<button onclick="pressOp('/')">/</button>
+	<button onclick="pressClear()">C</button>
+	<button onclick="pressEquals()">=</button><br><br>
+	<h2>History</h2>
+	<ul id="history"></ul>
+
+    <script src="calc.js"></script>
+</body>
+</html>
